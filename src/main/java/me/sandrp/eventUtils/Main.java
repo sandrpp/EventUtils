@@ -8,6 +8,9 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
+
+        //logs
+        System.out.println("test");
         //set plugin
         plugin = this;
 
