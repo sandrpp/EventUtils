@@ -1,0 +1,6 @@
+name: EventUtils
+version: '1.0-SNAPSHOT'
+main: me.sandrp.eventUtils.Main
+api-version: '1.21'
+authors: [ sandrp ]
+description: A Minecraft Utility Plugin for the Event Server
