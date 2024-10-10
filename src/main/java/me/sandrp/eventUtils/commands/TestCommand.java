@@ -2,6 +2,7 @@ package me.sandrp.eventUtils.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.event.Listener;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
