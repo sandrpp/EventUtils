@@ -1,14 +1,5 @@
-package de.elia.systemclasses.register.events;
+package me.sandrp.eventUtils;
 
-import de.elia.achivements.events.bossfight.AchievementBossFightEvent;
-import de.elia.bossfightcreator.events.connect.ConnectionEvent;
-import de.elia.bossfightcreator.game.executer.NewGameExecuter;
-import de.elia.items.events.join.RecipeEvent;
-import de.elia.items.events.magicbook.MagicBookEvent;
-import de.elia.soulboss.entity.events.DropEvent;
-import de.elia.soulboss.entity.mobs.boss.mob.ZombieBoss;
-import de.elia.soulboss.entity.mobs.boss.mob.ZombieBoss.ZombieBossEvent;
-import de.elia.soulboss.events.AttackEvent;
 import me.sandrp.eventUtils.events.JoinLeave;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;

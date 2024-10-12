@@ -1,6 +1,6 @@
 package me.sandrp.eventUtils.utils.message;
 
-import me.sandrp.simpletimer.Main;
+import me.sandrp.eventUtils.Main;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.minimessage.MiniMessage;
@@ -21,7 +21,7 @@ public class Chat {
     }
     public static void sendPrefixMessage(@NotNull Player playerIn, String messageIn){
         Component messageOut = miniMessage.deserialize(messageIn);
-        playerIn.sendMessage(Main.prefix.append(messageOut));
+        playerIn.sendMessage(Main.mainPrefix.append(messageOut));
     }
     public static void sendBroadcastMessage(String messageIn){
         Component messageOut = miniMessage.deserialize(messageIn);
@@ -29,7 +29,7 @@ public class Chat {
     }
     public static void sendBroadcastPrefixMessage(String messageIn){
         Component messageOut = miniMessage.deserialize(messageIn);
-        Bukkit.broadcast(Main.prefix.append(messageOut));
+        Bukkit.broadcast(Main.mainPrefix.append(messageOut));
     }
     public static void sendErrorPrefixMessage(@NotNull Player playerIn, String messageIn){
         Component messageOut = miniMessage.deserialize(messageIn);

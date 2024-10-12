@@ -1,6 +1,6 @@
 package me.sandrp.eventUtils.utils.message;
 
-import me.sandrp.simpletimer.Main;
+import me.sandrp.eventUtils.Main;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.minimessage.MiniMessage;
@@ -15,6 +15,12 @@ public class Console {
         Component messageOut = miniMessage.deserialize(messageIn);
         console.sendMessage(messageOut);
     }
+
+    public static void sendPrefixMessage(String messageIn){
+        Component messageOut = miniMessage.deserialize(messageIn);
+        console.sendMessage(Main.mainPrefix.append(messageOut));
+    }
+
     public static void sendErrorPrefixMessage(String messageIn){
         Component messageOut = miniMessage.deserialize(messageIn);
         console.sendMessage(Main.errorPrefix.append(messageOut).color(TextColor.color(229, 34, 19)));
